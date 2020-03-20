@@ -11,7 +11,7 @@ if (RNFastStorage.setupLibrary) RNFastStorage.setupLibrary();
  * @param {String} value
  *
  */
-export async function setString(key, value) {
+export async function setItem(key, value) {
   return await RNFastStorage.setString(key, value);
 }
 
@@ -19,7 +19,7 @@ export async function setString(key, value) {
  * Get a string value for a given key.
  * @param {String} key
  */
-export async function getString(key) {
+export async function setItem(key) {
   return await RNFastStorage.getString(key);
 }
 

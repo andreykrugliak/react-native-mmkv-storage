@@ -13,12 +13,12 @@ declare module MMKV {
  * @param {String} value
  *
  */
- function setString(key:string,value:string): Promise<boolean>;
+ function setItem(key:string,value:string): Promise<boolean>;
   /**
  * Get a string value for a given key.
  * @param {String} key
  */
- function getString(key:string): Promise<string>;
+ function setItem(key:string): Promise<string>;
 /**
  * Set an Object to storage for a given key.
  *
