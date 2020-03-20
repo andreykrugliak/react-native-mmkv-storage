@@ -19,7 +19,7 @@ export async function setItem(key, value) {
  * Get a string value for a given key.
  * @param {String} key
  */
-export async function setItem(key) {
+export async function getItem(key) {
   return await RNFastStorage.getString(key);
 }
 

@@ -18,7 +18,7 @@ declare module MMKV {
  * Get a string value for a given key.
  * @param {String} key
  */
- function setItem(key:string): Promise<string>;
+ function getItem(key:string): Promise<string>;
 /**
  * Set an Object to storage for a given key.
  *
