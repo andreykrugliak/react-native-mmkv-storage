@@ -321,3 +321,29 @@ export function getArray(key, callback) {
     }
   });
 }
+
+
+/**
+ * Set a string value to storage for a given key.
+ * Method for persist storage
+ *
+ * @param {String} key
+ * @param {String} value
+ *Async
+ */
+export async function setItem(key, value) {
+  if (typeof value !== "string")
+  throw new Error("The provided value is not a string");
+
+  return await RNFastStorage.setStringAsync(key, value);
+}
+
+/**
+ * Get a string value for a given key.
+ * Method for persist storage
+ * @param {String} key
+ */
+export async function getItem(key) {
+  return await RNFastStorage.getStringAsync(key);
+}
+

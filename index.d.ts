@@ -219,4 +219,19 @@ export function getKeys(callback:Function):Promise<Array<string>>;
 */
 export function hasKey(key:string,callback:Function):boolean;
 
+
+  /**
+ * Set a string value to storag for a given key.
+ *
+ * @param {String} key
+ * @param {String} value
+ *
+ */
+export async function setItem(key:string,value:string): Promise<boolean>;
+  /**
+ * Get a string value for a given key.
+ * @param {String} key
+ */
+export async function getItem(key:string): Promise<string>;
+
 }
